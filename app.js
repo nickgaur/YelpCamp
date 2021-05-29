@@ -165,6 +165,7 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("error", { err });
 });
 
-app.listen(8000, () => {
-  console.log("APP IS STARTING!!");
+const port = process.env.PORT || 8000
+app.listen(port, () => {
+  console.log(`SERVERS ARE STARTING AT ${port}`);
 });
