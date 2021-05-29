@@ -9,6 +9,7 @@ const multer = require("multer");
 const { storage } = require("../cloudinary/index");
 const upload = multer({ storage });
 
+
 router
   .route("/")
   .get(CatchAsync(campgrounds.index))
