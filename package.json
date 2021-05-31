@@ -1,14 +1,14 @@
 {
   "name": "yelpcamp",
-  "version": "14.16.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "yelpcamp campgrounds",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "nick gaur",
   "license": "ISC",
   "dependencies": {
     "@mapbox/mapbox-sdk": "^0.12.1",

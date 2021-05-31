@@ -1,0 +1,41 @@
+#cluster-map {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(59, 59, 59);
+}
+
+.card-image > img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 55%;
+}
+
+.all-campgrounds {
+  text-align: left !important;
+}
+
+/* RESPONSIVE CSS */
+@media only screen and (min-width: 992px) {
+  .card-image > img {
+    height: 250px;
+    width: 450px;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+@media only screen and (max-width: 770px){
+    #cluster-map {
+      height: 300px;
+  }
+  .all-campgrounds {
+    text-align: center !important;
+  }
+  }
+  
+  @media only screen and (max-height: 450px){
+    #cluster-map{
+     height: 200px;
+    }
+  }

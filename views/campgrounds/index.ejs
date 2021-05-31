@@ -1,12 +1,18 @@
 <% layout("layouts/boilerplate") %>
-    <div id="cluster-map"></div>
-    <h1>All Campgrounds</h1>
+<link rel="stylesheet" href="/css/index.css">
+<div class="">
+    <div class="container mt-1">
+        <%- include("../partials/flash") %>
+    </div>
+        <div id="cluster-map"></div>
+    <div class="container mt-3">
+    <h1 class="all-campgrounds">All Campgrounds</h1>
     <div><a href="/campgrounds/new">Add New Campground</a></div>
 
     <% for(let campground of campgrounds) {%>
         <div class="card mb-3">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 card-image">
                     <% if(campground.images.length) {%>
                         <img class="img-fluid" src="<%= campground.images[0].url %>" alt="">
                         <% } else{%>
@@ -34,7 +40,10 @@
             </div>
         </div>
         <% } %>
+    </div>
+    </div>
             <script>
                 const campgrounds = { features: <%- JSON.stringify(campgrounds) %>}
             </script>
             <script src="/js/clusterMap.js"></script>
+   
